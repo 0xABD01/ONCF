@@ -1,11 +1,11 @@
-// src/data/billetsMock.js
+
 
 export const billetsList = [
     {
       id: 1,
       depart: "Paris",
       destination: "Lyon",
-      date: "01-06-2025:20:00", // Format personnalisé
+      date: "03-06-2025:20:00", 
       prix: 25.5,
       classe: "1"
     },
@@ -13,7 +13,7 @@ export const billetsList = [
       id: 3,
       depart: "Paris",
       destination: "Lyon",
-      date: "01-06-2025:23:00", // Format personnalisé
+      date: "03-06-2025:23:00", 
       prix: 30.0,
       classe: "1"
     }

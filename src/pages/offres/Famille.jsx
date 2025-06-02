@@ -18,7 +18,7 @@ function Famille() {
           <li>Espaces réservés pour les poussettes.</li>
         </ul>
 
-        <Link to="/" className="text-blue-600 underline hover:text-blue-800">
+        <Link to="/Offres" className="text-blue-600 underline hover:text-blue-800">
           ← Retour aux offres
         </Link>
       </div>

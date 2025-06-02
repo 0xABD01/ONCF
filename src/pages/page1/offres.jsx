@@ -39,7 +39,7 @@ const data = [
     image: image3,
     title: "Offre Early Booking",
     description: "Plus vous réservez à l’avance, plus vous économisez ! Jusqu’à -25 % sur les billets achetés au moins 15 jours avant le départ.",
-    path: "/Offres/Early-Booking",
+    path: "/Offres/EarlyBooking",
   },
   
   

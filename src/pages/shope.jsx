@@ -73,17 +73,34 @@ function Shope() {
             </div>
 
             {/* Résumé */}
-            <div>
-              <div className="bg-white p-6 rounded-lg shadow sticky top-4">
-                <h3 className="text-xl font-semibold mb-4">Résumé de la commande</h3>
-                <ul className="space-y-2 mb-4">
-                  {cartItems.map((item) => (
-                    <li key={item.id} className="flex justify-between">
-                      <span>{item.depart} → {item.destination}</span>
-                      <span>{(item.prix * item.quantity).toFixed(2)} €</span>
-                    </li>
-                  ))}
-                </ul>
+    <div className="bg-white p-6 rounded-lg shadow sticky top-4">
+  <h3 className="text-xl font-semibold mb-4">Résumé de la commande</h3>
+
+  <ul className="space-y-3 mb-4">
+    {cartItems.map((item, index) => (
+      <li key={item.id} className="flex justify-between items-center p-2 border-b last:border-none">
+        <div className="flex items-center space-x-3">
+          {/* Numéro du ticket */}
+          <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+            Ticket {index + 1}
+          </span>
+          
+          {/* Départ → Destination + date */}
+          <div className="text-sm">
+            <p className="font-medium">{item.depart} → {item.destination}</p>
+            <p className="text-gray-500 text-xs">
+              {item.date}
+            </p>
+  </div>
+        </div>
+
+        {/* Prix total pour cet item */}
+        <span className="font-semibold text-gray-700">
+          {(item.prix * item.quantity).toFixed(2)} €
+        </span>
+      </li>
+    ))}
+  </ul>
                 <hr className="my-4" />
                 <div className="flex justify-between font-bold text-lg">
                   <span>Total :</span>
@@ -105,7 +122,7 @@ function Shope() {
                 </button>
               </div>
             </div>
-          </div>
+         
         )}
       </div>
     </div>

@@ -18,7 +18,7 @@ function Cimenu({ open }) {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/planifier">Planifier</Link></li>
               <li><Link to="/abonnements">Abonnements</Link></li>
-              <li><Link to="/promos">Promos</Link></li>
+              <li><Link to="/Offres">Offres</Link></li>
               <li><Link to="/info">Info</Link></li>
             </ul>
           </div>

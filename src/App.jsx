@@ -13,6 +13,8 @@ import Famille from './pages/offres/Famille.jsx';
 import Navette from './pages/offres/Navette.jsx';
 import Accessibilite from './pages/offres/Accessibilite.jsx';
 import Abonnement from './pages/Abonnement/Abonnement.jsx';
+import Offres from './pages/page1/offres.jsx';
+import EarlyBooking from './pages/offres/EarlyBooking.jsx';
 
 
 const App = () => {
@@ -32,6 +34,8 @@ const App = () => {
           <Route path="/Offres/Navette" element={<Navette />} />
           <Route path="/Offres/Accessibilité" element={<Accessibilite />} />
           <Route path="/abonnements" element={<Abonnement />} />
+          <Route path="/Offres" element={<Offres />} />
+          <Route path="/Offres/EarlyBooking" element={<EarlyBooking />} />
     
         </Routes>
         <Footer/>
