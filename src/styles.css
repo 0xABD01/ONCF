@@ -1,0 +1,11 @@
+/* Styles globaux */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+} 
