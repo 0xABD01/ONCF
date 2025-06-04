@@ -10,7 +10,7 @@ function Abonnement() {
         <h2 className="text-3xl font-bold text-center mb-2">Nos Cartes d’Abonnement</h2>
         <p className="text-center text-gray-600 mb-10">Choisissez la carte qui correspond à votre profil et obtenez des avantages exclusifs.</p>
 
-        {/* Liste des cartes */}
+        
         <div className="grid md:grid-cols-3 gap-6 mb-10">
           {abonnementsList.map((card) => (
             <div
@@ -26,12 +26,12 @@ function Abonnement() {
           ))}
         </div>
 
-        {/* Détails de la carte sélectionnée */}
+        
         {selectedCard && (
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">{selectedCard.title}</h3>
 
-            {/* Avantages */}
+       
             <div className="mb-8">
               <h4 className="text-lg font-semibold text-gray-700 mb-3">Avantages</h4>
               <ul className="space-y-2">
@@ -44,7 +44,7 @@ function Abonnement() {
               </ul>
             </div>
 
-            {/* Procédure */}
+        
             <div>
               <h4 className="text-lg font-semibold text-gray-700 mb-3">Procédure</h4>
               <ol className="list-decimal pl-5 space-y-2">
